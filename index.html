@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Forms</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js"></script>
+</head>
+
+<body>
+    <div>
+        <p class="para1">Totelligence Solutions</p>
+        <p class="para2">Task No.6 (Login & SignUp Page complete Authentication with Firebase)</p>
+    </div>
+    <!--Login Form-->
+    <div class="center-box" id="login-div">
+        <h2>Login Form</h2>
+        <input type="email" class="text-field" id="login-email" name="login-email" placeholder="Enter Email"
+            required /><br>
+        <input type="password" class="text-field" id="login-password" name="login-password" placeholder="Enter Password"
+            required /><br>
+        <button class="btn-style" id="login-btn">Login</button><br>
+        <p class="para3">(Please wait after pressing login button)</p>
+        <button id="reg-btn" class="an-btn">don't have account? REGISTER</button>
+    </div>
+
+    <!--Registration Form-->
+    <div class="center-box" id="register-div" value="false">
+        <h2>SignUp Form</h2>
+        <input type="text" id="register-name" class="text-field" name="register-name" placeholder="Enter Your Name"
+            required /><br>
+        <input type="email" id="register-email" class="text-field" name="register-email" placeholder="Enter Email"
+            required /><br>
+        <input type="password" id="register-password" class="text-field" name="register-password"
+            placeholder="Enter Password" required /><br>
+        <button class="btn-style" id="register-btn">REGISTER</button><br>
+        <p class="para3">(Please wait after pressing Register button)</p>
+        <button class="an-btn" id="log-btn">have account? LOGIN</button>
+    </div>
+
+    <!--Logout-->
+    <div id="result-box">
+        <h3 id="result"></h3>
+        <button class="btn-style" id="log-out-btn">Logout</button>
+    </div>
+</body>
+
+</html>
